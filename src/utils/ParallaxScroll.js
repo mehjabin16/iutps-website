@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import ParallaxImage from '../components/elements/ParallaxImage';
 import Input from '../components/elements/Input';
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
  
 
 const ParallaxScroll = () =>  {
@@ -10,6 +12,9 @@ const ParallaxScroll = () =>  {
   return (
     <div style={{ width: '100%', height: '100%', background: '#253237' }}>
       <Parallax ref={parallax} pages={2}>
+      <ParallaxLayer offset={0} speed={0.2} style={{ opacity: 1 }}>
+              <Header navPosition="right" className="reveal-from-bottom" />
+            </ParallaxLayer>
         <ParallaxLayer
           offset={0}
           speed={0}
@@ -98,7 +103,9 @@ const ParallaxScroll = () =>  {
         </div>
       </div>
         </ParallaxLayer>
-
+        <ParallaxLayer offset={1.7} speed={0.2} style={{ opacity: 1 }}>
+              <Footer />
+            </ParallaxLayer>
       </Parallax>
     </div>
   )

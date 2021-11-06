@@ -12,11 +12,9 @@ import Cta from '../components/sections/Cta';
 
 const Home = () => {
   return (
-    <> 
-      <ParallaxProvider>
-            <ParallaxScroll/>
-      </ParallaxProvider>
-    </>
+      <div>
+          <h1>Test routing</h1>
+        </div>
   );
 }
 
