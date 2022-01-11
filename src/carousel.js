@@ -13,6 +13,9 @@ import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 
+import CircleIcon from '@mui/icons-material/Circle';
+
+
 import myimg from "./assets/images/PS farewell 1.JPG";
 import myimg2 from "./assets/images/PS farewell 2.JPG";
 
@@ -36,7 +39,9 @@ const CarouselTest = () => {
   ]
 
   return (
-    <Carousel fullHeightHover={false}     // We want the nav buttons wrapper to only be as big as the button element is
+    <Carousel
+    IndicatorIcon={<CircleIcon/>}
+      fullHeightHover={false}     // We want the nav buttons wrapper to only be as big as the button element is
       navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
         style: {
           backgroundColor: 'cornflowerblue',
