@@ -1,22 +1,25 @@
-import React, { useRef } from 'react'
-import {ParallaxProvider} from "react-scroll-parallax"
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-// import sections
-import ParallaxImage from './../components/elements/ParallaxImage';
+import React, { useState } from "react";
+import SmallComponent from "./SmallComponent";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import ParallaxScroll from '../utils/ParallaxScroll';
-import Hero from '../components/sections/Hero';
-import FeaturesTiles from '../components/sections/FeaturesTiles';
-import FeaturesSplit from '../components/sections/FeaturesSplit';
-import Testimonial from '../components/sections/Testimonial';
-import Cta from '../components/sections/Cta';
+
 
 const Home = () => {
+  const [toggleDark, settoggleDark] = useState(false);
+  const myTheme = createMuiTheme({
+    
+    // Theme settings
+    palette: {
+      type: "dark"
+    },
+  });
+  
   return (
-    <> 
-      <ParallaxProvider>
-            <ParallaxScroll/>
-      </ParallaxProvider>
-    </>
+    
+    // Wrapping code in ThemeProvider
+    <ThemeProvider theme={myTheme}>
+      <ParallaxScroll/>
+    </ThemeProvider>
   );
 }
 
