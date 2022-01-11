@@ -3,15 +3,8 @@ import Carousel from 'react-material-ui-carousel'
 import Container from '@mui/material/Container';
 
 import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
 
 import CircleIcon from '@mui/icons-material/Circle';
 
@@ -40,7 +33,7 @@ const CarouselTest = () => {
 
   return (
     <Carousel
-    IndicatorIcon={<CircleIcon/>}
+      IndicatorIcon={<CircleIcon style={{fontSize: "15px"}}/>}
       fullHeightHover={false}     // We want the nav buttons wrapper to only be as big as the button element is
       navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
         style: {
@@ -72,7 +65,7 @@ function Item(props) {
       <Card sx={{ display: 'flex' }}>
         <CardMedia
           component="img"
-          sx={{ height: 700 }}
+          sx={{ height: 600 }}
           image={props.item.image}
           alt="Live from space album cover"
         />
