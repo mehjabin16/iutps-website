@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SmallComponent from "./SmallComponent";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import ParallaxScroll from '../utils/ParallaxScroll';
+import CarouselTest from './../carousel';
 
 
 const Home = () => {
@@ -18,7 +19,9 @@ const Home = () => {
     
     // Wrapping code in ThemeProvider
     <ThemeProvider theme={myTheme}>
-      <ParallaxScroll/>
+      <ParallaxScroll />
+      
+      <CarouselTest />
     </ThemeProvider>
   );
 }
