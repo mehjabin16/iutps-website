@@ -11,7 +11,7 @@ import LayoutDefault from "./layouts/LayoutDefault";
 import Home from "./views/Home";
 import Test from "./views/Test";
 import CarouselTest from "./carousel";
-import Gallery from "./views/Gallery";
+import GalleryView from "./views/GalleryView";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -41,7 +41,7 @@ const App = () => {
       <AppRoute
         exact
         path="/gallery"
-        component={Gallery}
+        component={GalleryView}
         layout={LayoutDefault}
       />
     </Switch>
