@@ -105,6 +105,7 @@ const ParallaxScroll = () => {
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 1 }}>
           <CarouselTest />
         </ParallaxLayer>
+        
         <ParallaxLayer offset={1.7} speed={0.2} style={{ opacity: 1 }}>
           <Footer />
         </ParallaxLayer>
