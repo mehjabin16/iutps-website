@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import classNames from "classnames";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import ParallaxImage from "../components/elements/ParallaxImage";
+
+// import sections
 import Input from "../components/elements/Input";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -98,6 +99,7 @@ const ParallaxScroll = () => {
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 1 }}>
           <CarouselTest />
         </ParallaxLayer>
+        
         <ParallaxLayer offset={1.7} speed={0.2} style={{ opacity: 1 }}>
           <Footer />
         </ParallaxLayer>
