@@ -12,16 +12,9 @@ const ParallaxScroll = () => {
   return (
     <div style={{ width: "100%", height: "100%", background: "#253237" }}>
       <Parallax ref={parallax} pages={2}>
-        <ParallaxLayer offset={0} speed={0.2} style={{ opacity: 1 }}>
-          <Header navPosition="right" className="reveal-from-bottom" />
+        <ParallaxLayer offset={0} speed={0.2} style={{ opacity: 1, zIndex: 5 }}>
+          <Header style={{ background: "#00000095" }} />
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={0}
-          speed={0}
-          style={{
-            backgroundSize: "cover",
-          }}
-        />
 
         <ParallaxLayer offset={0} speed={0.2} style={{ opacity: 1 }}>
           <img
