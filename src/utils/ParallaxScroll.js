@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import classNames from "classnames";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import ParallaxImage from "../components/elements/ParallaxImage";
+
+// import sections
 import Input from "../components/elements/Input";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";

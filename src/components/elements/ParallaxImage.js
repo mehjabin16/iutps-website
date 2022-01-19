@@ -18,7 +18,9 @@ const ParallaxImage = (props) =>{
            height: props.height,
            width: props.width,
            marginLeft: props.marginLeft,
-           marginRight: props.marginRight
+           marginRight: props.marginRight,
+           marginTop: props.marginTop,
+           marginBottom: props.marginBottom
         }}
         >
         <div >
